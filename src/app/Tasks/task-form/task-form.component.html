@@ -1,0 +1,9 @@
+<!-- task-form.component.html -->
+
+<form>
+    <input type="text" [(ngModel)]="task.title" placeholder="Title" name="title" >
+    <input type="text" [(ngModel)]="task.description" placeholder="Description" name="description" >
+    <input type="date" [(ngModel)]="task.dueDate " name="dueDate" date="yyyy-MM-dd">
+    <button type="button" (click)="addTask()">Add Task</button>
+  </form>
+  
